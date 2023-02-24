@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thắp hương để qua môn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="background">
+    <div class="container">
+      <div class="phat">
+        <div class="title">
+          Thầy Giang sẽ cho con qua môn!! Donate cho thầy vào số tài khoản
+          0374786008 MBANK nhé :))
+        </div>
+        <img class="imganhphat" src="img_phat-removebg-preview.png" alt="" />
+        <img class="may" src="may-removebg-preview.png" alt="" />
+      </div>
+
+      <div class="img--bantho">
+        <img
+          class="quehuong"
+          src="lovepik-incense-png-image_401433509_wh1200-removebg-preview.png"
+          alt=""
+        />
+        <img src="img-bantho-removebg-preview.png" alt="" />
+      </div>
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Nhập email  rồi thắp hương thầy độ cho"
+        />
+        <button class="btn">Thắp Hương</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const btn = document.querySelector(".btn");
+    const quehuong = document.querySelector(".quehuong");
+    const phat = document.querySelector(".phat");
+    btn.addEventListener("click", () => {
+      quehuong.classList.add("thaphuong");
+      setTimeout(() => {
+        phat.classList.add("hienphat");
+      }, 1500);
+    });
+  </script>
+</html>

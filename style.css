@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+.img--bantho{
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border-bottom: 5px solid saddlebrown;
+}
+.quehuong{
+        position: absolute;
+        width: 100px;
+        top: 0;
+        display: flex;
+        transform: translateY(-50px);
+        opacity: 0;
+        filter: blur(10px);
+        transition: opacity 1s ease-in-out ,filter 2s ease-in-out,transform 2s ease-in;
+        transition: all 3s;
+}
+
+.thaphuong{
+        transform: translateY(0px) !important;
+        opacity: 1 !important;
+        filter: blur(0px);
+}
+.phat {
+        position: relative;
+        width: 600px;
+        opacity: 0;
+        filter: blur(10px);
+        transition: opacity 5s ease-in-out ,filter 5s ease-in-out;
+}
+.may{
+        position: absolute;
+       transform: translate(-70px,-116px);
+}
+.title{
+        position: absolute;
+        transform: translateX(400px);
+        font-size: 20px;
+        padding: 20px;
+}
+.hienphat{
+        opacity: 1 !important;
+        filter: blur(0px);
+}
+.form {
+       padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+}
+.form input{
+        width: 350px;
+        padding: 10px 20px ;
+        border: 1px solid saddlebrown;
+}
+.form button{
+        background-color: saddlebrown;
+        border: 1px solid saddlebrown;
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+
+}
