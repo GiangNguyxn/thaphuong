@@ -38,6 +38,12 @@
           placeholder="Nhập email  rồi thắp hương thầy độ cho"
         />
         <button class="btn">Thắp Hương</button>
+        <audio class="audio" controls>
+          <source
+            src="X2Download.app - tiếng chuông, mõ chùa (128 kbps).mp3"
+            type=""
+          />
+        </audio>
       </div>
     </div>
   </body>
@@ -46,10 +52,12 @@
     const btn = document.querySelector(".btn");
     const quehuong = document.querySelector(".quehuong");
     const phat = document.querySelector(".phat");
+    const audio = document.querySelector(".audio");
     btn.addEventListener("click", () => {
       quehuong.classList.add("thaphuong");
       setTimeout(() => {
         phat.classList.add("hienphat");
+        audio.play();
       }, 1500);
     });
   </script>
