@@ -54,7 +54,7 @@ body {
 }
 .may{
         position: absolute;
-       transform: translate(-70px,-116px);
+        transform: translate(-70px,-116px);
 }
 .title{
         position: absolute;
@@ -90,4 +90,9 @@ body {
 }
 .audio{
         display: none;
+}
+@media screen and (max-width:600px) {
+        .phat{
+                max-width: 350px;
+        }
 }
