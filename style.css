@@ -76,6 +76,7 @@ body {
         gap: 20px;
 }
 .form input{
+        display: none;
         width: 350px;
         padding: 10px 20px ;
         border: 1px solid saddlebrown;
